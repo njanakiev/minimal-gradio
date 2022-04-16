@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  minimal-gradio:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    ports:
+      - 7861:7861
